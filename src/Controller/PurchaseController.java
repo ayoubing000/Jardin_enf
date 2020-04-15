@@ -10,17 +10,10 @@ import Entity.AbonnementAd;
 import Service.Purchase_Service;
 import java.net.URL;
 import java.sql.SQLException;
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -95,7 +88,6 @@ public class PurchaseController implements Initializable {
                 E1.setType(type_txt.getText());
                 E1.setDescription(desc_txt.getText());
                 E1.setTotal(prix*1);
-                //E1.setDate_fin(date);
                 p.mnthoneAbonnement(E1);
             }else if ( typ =="trimestriel")
             {
@@ -107,7 +99,6 @@ public class PurchaseController implements Initializable {
                 E1.setType(type_txt.getText());
                 E1.setTotal(pr*3);
                 E1.setData_debut(today);
-               // E1.setDate_fin(newDate);
                 E1.setEnf_id(i);
                 p.monthtwoAbonnement(E1);
             }else {
@@ -119,7 +110,6 @@ public class PurchaseController implements Initializable {
                 E1.setType(type_txt.getText());
                 E1.setTotal(pr*12);
                 E1.setData_debut(today);
-               // E1.setDate_fin(newDate);
                 E1.setEnf_id(i);
                 p.monthrheeeAbonnement(E1);
             }
@@ -160,16 +150,5 @@ public class PurchaseController implements Initializable {
         );
 
     }
- /*  
-public Date  addMonths(String dateAsString, int nbMonths) throws ParseException {
-        String format = "MM/dd/yyyy" ;
-        SimpleDateFormat sdf = new SimpleDateFormat(format) ;
-        Date dateAsObj = sdf.parse(dateAsString) ;
-        Calendar cal = Calendar.getInstance();
-        cal.setTime(dateAsObj);
-        cal.add(Calendar.MONTH, nbMonths);
-        Date dateAsObjAfterAMonth = cal.getTime() ;
-    System.out.println(sdf.format(dateAsObjAfterAMonth));
-    return dateAsObjAfterAMonth ;
-}*/
+
 }
