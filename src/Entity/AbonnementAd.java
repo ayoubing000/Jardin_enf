@@ -55,6 +55,7 @@ public class AbonnementAd {
     }
 
     public void setType(String type) {
+
         this.type = type;
     }
      @Override

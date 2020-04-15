@@ -34,7 +34,6 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
-import org.apache.commons.lang3.time.DateUtils;
 
 
 /**
@@ -100,7 +99,6 @@ public class PurchaseController implements Initializable {
                 p.mnthoneAbonnement(E1);
             }else if ( typ =="trimestriel")
             {
-                Date newDate = DateUtils.addMonths(new Date(), 3);
                 Date today = Calendar.getInstance().getTime();                 
                 Integer i = Integer.parseInt(output);
                 Integer pr = Integer.parseInt(prix_txt.getText());
@@ -113,7 +111,6 @@ public class PurchaseController implements Initializable {
                 E1.setEnf_id(i);
                 p.monthtwoAbonnement(E1);
             }else {
-                Date newDate = DateUtils.addMonths(new Date(), 12);
                 Date today = Calendar.getInstance().getTime();                 
                 Integer i = Integer.parseInt(output);
                 Integer pr = Integer.parseInt(prix_txt.getText());

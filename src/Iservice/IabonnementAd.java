@@ -19,5 +19,5 @@ public interface IabonnementAd {
     public void supprimerAbonnementAd(AbonnementAd AbonnementAd) throws SQLException;
     public List<AbonnementAd> afficherAbonnementAd() throws SQLException;
     public void RechercherAbonnementAdId(int id_abonnement) throws SQLException;
-    
+
 }
