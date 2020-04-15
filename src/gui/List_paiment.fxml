@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="772.0" style="-fx-background-color: #d1ecf1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Service.List_paimentController">
+   <children>
+      <Pane prefHeight="135.0" prefWidth="772.0" style="-fx-background-color: #F6CD1B;">
+         <children>
+            <Label layoutX="186.0" layoutY="52.0" text="Paiement des abonnements" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="127.0" fitWidth="140.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/84262674_172302437419726_6503355040546160640_n.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TableView fx:id="tabl" layoutY="133.0" prefHeight="267.0" prefWidth="674.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="43.0" text="ID" />
+          <TableColumn fx:id="enf_id" prefWidth="66.0" text="Enfant ID" />
+            <TableColumn fx:id="date_deb" prefWidth="93.0" text="Date Debut" />
+            <TableColumn fx:id="date_fin" prefWidth="66.0" text="Date Fin" />
+            <TableColumn fx:id="typ" prefWidth="49.0" text="Type" />
+            <TableColumn fx:id="desc" prefWidth="93.0" text="Description" />
+            <TableColumn fx:id="statu" prefWidth="55.0" text="Statu" />
+            <TableColumn fx:id="statu_p" prefWidth="135.0" text="Statu Paiment" />
+            <TableColumn fx:id="total" prefWidth="75.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="payer" layoutX="695.0" layoutY="357.0" mnemonicParsing="false" onAction="#payer_abn" prefHeight="29.0" prefWidth="58.0" text="Payer" />
+   </children>
+</AnchorPane>
