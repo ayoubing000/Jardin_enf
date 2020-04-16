@@ -6,6 +6,8 @@
 package Iservice;
 
 import Entity.Abonnement;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -14,11 +16,10 @@ import java.util.List;
  */
 public interface Iabonnement {
     
-    public void creerAbonnement(Abonnement Abonnement);
-    public void modifierAbonnement(Abonnement Abonnement);
-    public void supprimerAbonnement(Abonnement Abonnement);
-    public List<Abonnement> afficherAbonnementAd();
-    public Abonnement RechercherAbonnementId(int id_abonnement);
-    public Abonnement RechercherAbonnementByNom(String nom_abonnement);
-    
+    public void creerAbonnement(Abonnement Abonnement)  throws SQLException ;
+    public void modifierAbonnement(Abonnement Abonnement) throws SQLException ;
+    public void supprimerAbonnement(Abonnement Abonnement) throws SQLException ;
+    public List<Abonnement> afficherAbonnementAd() throws SQLException ;
+    public void RechercherAbonnementByNom(String nom_abonnement) throws SQLException ;
+
 }

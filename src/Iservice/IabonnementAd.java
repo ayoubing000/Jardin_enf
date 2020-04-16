@@ -6,6 +6,7 @@
 package Iservice;
 
 import Entity.AbonnementAd;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -13,11 +14,10 @@ import java.util.List;
  * @author ayoub
  */
 public interface IabonnementAd {
-    public void creerAbonnementAd(AbonnementAd AbonnementAd);
-    public void modifierAbonnementAd(AbonnementAd AbonnementAd);
-    public void supprimerAbonnementAd(AbonnementAd AbonnementAd);
-    public List<AbonnementAd> afficherAbonnementAd();
-    public AbonnementAd RechercherAbonnementAdId(int id_abonnement);
-    public AbonnementAd RechercherAbonnementAdByNom(String nom_abonnement);
-    
+    public void creerAbonnementAd(AbonnementAd AbonnementAd) throws SQLException;
+    public void modifierAbonnementAd(AbonnementAd AbonnementAd) throws SQLException;
+    public void supprimerAbonnementAd(AbonnementAd AbonnementAd) throws SQLException;
+    public List<AbonnementAd> afficherAbonnementAd() throws SQLException;
+    public void RechercherAbonnementAdId(int id_abonnement) throws SQLException;
+
 }

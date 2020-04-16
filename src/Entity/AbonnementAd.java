@@ -13,8 +13,19 @@ public class AbonnementAd {
     private int id;
     private String Description;
     private float prix;
-    private int type;
+    private String type;
 
+    public AbonnementAd() {
+    }
+
+    public AbonnementAd(int id, String Description, float prix, String type) {
+        this.id = id;
+        this.Description = Description;
+        this.prix = prix;
+        this.type = type;
+    }
+
+    
     public int getId() {
         return id;
     }
@@ -39,11 +50,12 @@ public class AbonnementAd {
         this.prix = prix;
     }
 
-    public int getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(String type) {
+
         this.type = type;
     }
      @Override
