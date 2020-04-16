@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="607.0" prefWidth="815.0" style="-fx-background-color: #d1ecf1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ENSEIGNANT1Controller">
+   <children>
+      <BorderPane layoutY="-2.0" prefHeight="108.0" prefWidth="815.0" style="-fx-background-color: #F6CD1B;">
+         <center>
+            <Label text="Gestion des enseignants" textFill="#fcfcfc" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <TextField fx:id="I1" layoutY="140.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="I2" layoutY="196.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="I3" layoutY="252.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="I4" layoutY="304.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="I5" layoutY="357.0" prefHeight="25.0" prefWidth="210.0" />
+      <TextField fx:id="I6" layoutY="409.0" prefHeight="25.0" prefWidth="210.0" />
+      <ComboBox fx:id="contratid" layoutY="460.0" prefHeight="25.0" prefWidth="210.0" />
+      <ComboBox fx:id="emploiid" layoutY="513.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button layoutX="4.0" layoutY="553.0" mnemonicParsing="false" onAction="#AJOUTER" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Ajouter" />
+      <Button layoutX="125.0" layoutY="553.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Modifier" />
+      <TableView fx:id="list" layoutX="264.0" layoutY="192.0" prefHeight="322.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="26.0" text="id" />
+            <TableColumn fx:id="cin" prefWidth="54.0" text="cin" />
+            <TableColumn fx:id="cv" prefWidth="66.0" text="cv" />
+            <TableColumn fx:id="email" prefWidth="115.0" text="email" />
+            <TableColumn fx:id="password" minWidth="0.0" prefWidth="67.0" text="password" />
+            <TableColumn fx:id="diplomes" prefWidth="63.0" text="diplomes" />
+            <TableColumn fx:id="CONTRAT" prefWidth="65.0" text="contrat id" />
+            <TableColumn fx:id="EMPLOI" prefWidth="75.0" text="emploi Id" />
+         </columns>
+      </TableView>
+      <Button layoutX="531.0" layoutY="123.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Supprimer" />
+      <Label layoutX="4.0" layoutY="107.0" prefHeight="33.0" prefWidth="125.0" text="ID:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="163.0" prefHeight="33.0" prefWidth="125.0" text="cin:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="221.0" prefHeight="33.0" prefWidth="125.0" text="cv:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="3.0" layoutY="276.0" prefHeight="33.0" prefWidth="125.0" text="email:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="329.0" prefHeight="33.0" prefWidth="125.0" text="password:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="382.0" prefHeight="33.0" prefWidth="125.0" text="diplomes:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="434.0" prefHeight="33.0" prefWidth="125.0" text="contrat id:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="4.0" layoutY="485.0" prefHeight="33.0" prefWidth="125.0" text="Emploi_id:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="672.0" layoutY="123.0" mnemonicParsing="false" onAction="#Chercher" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Chercher" />
+      <TextField fx:id="idrecherche" layoutX="667.0" layoutY="163.0" prefHeight="25.0" prefWidth="111.0" />
+      <Text fx:id="LIBELLEA" layoutX="261.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="492.13671875" />
+      <ImageView fitHeight="143.0" fitWidth="176.0" layoutY="-2.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

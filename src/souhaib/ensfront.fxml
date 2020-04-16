@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="831.0" style="-fx-background-color: #d1ecf1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EnsfrontController">
+   <children>
+      <AnchorPane prefHeight="96.0" prefWidth="831.0" style="-fx-background-color: #F6CD1B;">
+         <children>
+            <Label layoutX="281.0" layoutY="20.0" text="espacce enseignants">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="143.0" fitWidth="176.0" layoutX="-7.0" layoutY="1.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="list" layoutX="239.0" layoutY="136.0" prefHeight="90.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="26.0" text="id" />
+            <TableColumn fx:id="cin" prefWidth="54.0" text="cin" />
+            <TableColumn fx:id="cv" prefWidth="66.0" text="cv" />
+            <TableColumn fx:id="email" prefWidth="115.0" text="email" />
+            <TableColumn fx:id="password" minWidth="0.0" prefWidth="67.0" text="password" />
+            <TableColumn fx:id="diplomes" prefWidth="63.0" text="diplomes" />
+            <TableColumn fx:id="CONTRAT" prefWidth="65.0" text="contrat id" />
+            <TableColumn fx:id="EMPLOI" prefWidth="75.0" text="emploi Id" />
+         </columns>
+      </TableView>
+      <TableView fx:id="list1" layoutX="239.0" layoutY="255.0" prefHeight="90.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="id1" prefWidth="26.0" text="id" />
+            <TableColumn fx:id="type" prefWidth="54.0" text="type" />
+            <TableColumn fx:id="date_signature" prefWidth="98.0" text="date_signature" />
+            <TableColumn fx:id="date_debut" prefWidth="75.0" text="date_debut" />
+            <TableColumn fx:id="date_fin" minWidth="0.0" prefWidth="63.0" text="date_fin" />
+            <TableColumn fx:id="date_resiliation" prefWidth="97.0" text="date_resiliation" />
+            <TableColumn fx:id="enseigniant" prefWidth="86.0" text="enseigniant id" />
+         </columns>
+      </TableView>
+      <Label layoutX="246.0" layoutY="226.0" text="Contrat">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="list2" layoutX="239.0" layoutY="387.0" prefHeight="90.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="id2" prefWidth="26.0" text="id" />
+            <TableColumn fx:id="jour" prefWidth="68.0" text="jour" />
+            <TableColumn fx:id="desc" prefWidth="76.0" text="description" />
+            <TableColumn fx:id="ensei" prefWidth="86.0" text="enseignant id" />
+            <TableColumn fx:id="salle" minWidth="0.0" prefWidth="72.0" text="salle id" />
+         </columns>
+      </TableView>
+      <Label layoutX="259.0" layoutY="362.0" text="Emploi">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="246.0" layoutY="111.0" text="enseignant">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

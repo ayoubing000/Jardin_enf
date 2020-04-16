@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="483.0" prefWidth="603.0" style="-fx-background-color: #d1ecf1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SALLE1Controller">
+   <children>
+      <BorderPane prefHeight="96.0" prefWidth="603.0" style="-fx-background-color: #F6CD1B;">
+         <center>
+            <Label text="Gestion des salles" textFill="#fcfcfc" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="41.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <TableView fx:id="list" layoutX="217.0" layoutY="157.0" prefHeight="251.0" prefWidth="363.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+            <TableColumn fx:id="libelle" prefWidth="75.0" text="libelle" />
+            <TableColumn fx:id="emploi" prefWidth="75.0" text="emploi id" />
+         </columns>
+      </TableView>
+      <Label layoutX="8.0" layoutY="128.0" prefHeight="33.0" prefWidth="125.0" text="ID:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID" layoutY="172.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label layoutX="8.0" layoutY="316.0" prefHeight="33.0" prefWidth="125.0" text="EMPLOI_ID:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="8.0" layoutY="218.0" prefHeight="33.0" prefWidth="125.0" text="LIBELLE:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LIBELLE" layoutX="-1.0" layoutY="263.0" prefHeight="25.0" prefWidth="210.0" />
+      <ComboBox fx:id="idemploi" layoutX="-1.0" layoutY="361.0" prefHeight="25.0" prefWidth="210.0" />
+      <Button layoutX="-2.0" layoutY="411.0" mnemonicParsing="false" onAction="#AJOUTER" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Ajouter" />
+      <Button layoutX="105.0" layoutY="412.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Modifier" />
+      <Button layoutX="326.0" layoutY="103.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Supprimer" />
+      <Button layoutX="438.0" layoutY="103.0" mnemonicParsing="false" onAction="#Chercher" prefHeight="25.0" prefWidth="101.0" style="-fx-background-color: #A9BDC6;" text="Chercher" />
+      <TextField fx:id="idrecherche" layoutX="438.0" layoutY="132.0" prefHeight="25.0" prefWidth="111.0" />
+      <Text fx:id="LIBELLEA" layoutX="244.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="308.13671875" />
+      <ImageView fitHeight="129.0" fitWidth="152.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
